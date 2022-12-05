@@ -1,3 +1,4 @@
+const path= require('path');
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
@@ -8,6 +9,11 @@ import { visualizer } from "rollup-plugin-visualizer";
 const excludeComponents = ['LightIcon','DarkIcon']
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '/src'),
+    },
+  },
   server: {
     proxy: {
       '/api': {

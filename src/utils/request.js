@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Notification, MessageBox, Message, Loading } from 'element-ui'
+import { layer } from  "@layui/layer-vue"
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 import errorCode from '@/utils/errorCode'
@@ -15,7 +15,7 @@ axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 // 创建axios实例
 const service = axios.create({
   // axios中请求配置有baseURL选项，表示请求URL公共部分
-  baseURL: process.env.VUE_APP_BASE_API,
+  baseURL: '/api',
   // 超时
   timeout: 10000
 })
@@ -78,24 +78,40 @@ service.interceptors.response.use(res => {
     if (code === 401) {
       if (!isRelogin.show) {
         isRelogin.show = true;
-        MessageBox.confirm('登录状态已过期，您可以继续留在该页面，或者重新登录', '系统提示', { confirmButtonText: '重新登录', cancelButtonText: '取消', type: 'warning' }).then(() => {
-          isRelogin.show = false;
-          store.dispatch('LogOut').then(() => {
-            location.href = '/index';
-          })
-      }).catch(() => {
-        isRelogin.show = false;
-      });
-    }
+        layer.open({
+          title:"系统提示",
+          content:"登录状态已过期，您可以继续留在该页面，或者重新登录",
+          shade: false,
+          btn: [
+            {
+              text:"重新登录",
+              callback: function(layerId) {
+                isRelogin.show = false;
+                layer.close(layerId);
+                store.dispatch('LogOut').then(() => {
+                  location.href = '/index';
+                })
+              }
+            },
+            {
+              text:"取消",
+              callback: function(layerId) {
+                isRelogin.show = false;
+                layer.close(layerId);
+              }
+            }
+          ]
+        });
+      }
       return Promise.reject('无效的会话，或者会话已过期，请重新登录。')
     } else if (code === 500) {
-      Message({ message: msg, type: 'error' })
+      layer.msg(msg, { icon : 2, time: 1000})
       return Promise.reject(new Error(msg))
     } else if (code === 601) {
-      Message({ message: msg, type: 'warning' })
+      layer.msg(msg, { icon : 2, time: 1000})
       return Promise.reject('error')
     } else if (code !== 200) {
-      Notification.error({ title: msg })
+      layer.msg(msg, { icon : 2, time: 1000})
       return Promise.reject('error')
     } else {
       return res.data
@@ -111,14 +127,14 @@ service.interceptors.response.use(res => {
     } else if (message.includes("Request failed with status code")) {
       message = "系统接口" + message.substr(message.length - 3) + "异常";
     }
-    Message({ message: message, type: 'error', duration: 5 * 1000 })
+    layer.msg(message, { icon : 2, time: 1000})
     return Promise.reject(error)
   }
 )
 
 // 通用下载方法
 export function download(url, params, filename, config) {
-  downloadLoadingInstance = Loading.service({ text: "正在下载数据，请稍候", spinner: "el-icon-loading", background: "rgba(0, 0, 0, 0.7)", })
+  // downloadLoadingInstance = Loading.service({ text: "正在下载数据，请稍候", spinner: "el-icon-loading", background: "rgba(0, 0, 0, 0.7)", })
   return service.post(url, params, {
     transformRequest: [(params) => { return tansParams(params) }],
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -133,12 +149,11 @@ export function download(url, params, filename, config) {
       const resText = await data.text();
       const rspObj = JSON.parse(resText);
       const errMsg = errorCode[rspObj.code] || rspObj.msg || errorCode['default']
-      Message.error(errMsg);
+      layer.msg(errMsg, { icon : 2, time: 1000})
     }
     downloadLoadingInstance.close();
   }).catch((r) => {
-    console.error(r)
-    Message.error('下载文件出现错误，请联系管理员！')
+    layer.msg('下载文件出现错误，请联系管理员！', { icon : 2, time: 1000})
     downloadLoadingInstance.close();
   })
 }

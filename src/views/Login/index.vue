@@ -36,6 +36,25 @@
                         aria-placeholder="请输入密码"
                       ></lay-input>
                     </div>
+                    <div style="margin-bottom: 10px;">
+                      <lay-input
+                        prefix-icon="layui-icon-password"
+                        v-model="loginForm.code"
+                        type="text"
+                        aria-placeholder="请输入验证码"
+                      >
+                        <template #suffix>
+                          <img
+                            class="login-code"
+                            :src="state.codeImg"
+                            @click="getImg()"
+                          />
+                        </template>
+                      </lay-input>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                      <a class="forgetpwd">忘记密码</a>
+                    </div>
                   </div>
                   <lay-button
                     type="primary"
@@ -80,30 +99,92 @@
 </template>
 
 <script lang="ts" setup>
-import { login } from '../../api/module/user';
-import { defineComponent, reactive, ref } from "vue";
+// import { login } from '../../api/module/user';
+import { defineComponent, reactive, ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { useUserStore } from '../../store/user';
 import { layer } from "@layui/layer-vue";
+import {
+  getCodeImg,
+  login
+} from '@/apis/login';
+import { setToken } from '@/utils/auth';
+import md5 from 'md5';
 const current1 = ref("1");
 const router = useRouter();
 const userStore = useUserStore();
 const method = ref("1");
 const remember = ref(false);
-const loginForm = reactive({account:"admin",password:"123456"})
-const loginSubmit = async () => {
-  router.push('/');
-  // let { data, code, msg } = await login(loginForm);
-  // if (code == 200) {
-  //   layer.msg(msg, { icon: 1 }, async () => {
-  //     userStore.token = data.token;
-  //     await userStore.loadMenus();
-  //     await userStore.loadPermissions();
-  //     router.push('/');
-  //   })
-  // } else {
-  //   layer.msg(msg, { icon: 2 })
-  // }
+const loginForm = reactive({account:"admin",password:"123456", code: "", uuid: ''});
+const state = reactive({
+  codeImg: '',
+  uuid: ''
+})
+onMounted(()=>{
+  getImg();
+})
+// const loginSubmit = async () => {
+//   router.push('/');
+//   let params = {...loginForm};
+//   params["password"] = md5(params["password"]);
+//   let { data, code, msg } = await login(loginForm);
+//   if (code == 200) {
+//     layer.msg(msg, { icon: 1 }, async () => {
+//       userStore.token = data.token;
+//       await userStore.loadMenus();
+//       await userStore.loadPermissions();
+//       router.push('/');
+//     })
+//   } else {
+//     layer.msg(msg, { icon: 2 })
+//   }
+// }
+const getImg = () => {
+  getCodeImg()
+    .then(res=>{
+      state.codeImg = "data:image/gif;base64," + res.img;
+      console.log('state.codeImg', state.codeImg)
+      loginForm.uuid = res.uuid;
+    })
+}
+const loginSubmit = () => {
+  let params = {...loginForm};
+  params["password"] = md5(params["password"]);
+  login(loginForm.account, loginForm.password, loginForm.code, loginForm.uuid)
+    .then(res=>{
+      if (res.code == 200) {
+        setToken(res.token);
+        router.push('/');
+      }
+      // if (res.status == "0") {
+      //   if (res.logintype == 1) {
+      //     layer.msg("第一次登录需要修改密码");
+      //     // layer.open({
+      //     //     type: 2,
+      //     //     content: '/DigitalORCuIoT/toupdatepssword?username=' + res.user,
+      //     //     title: '修改密码',
+      //     //     area: ['500px', '300px'],
+      //     //     btn: ['确定', '取消'],
+      //     //     yes: function (index, layero) {
+      //     //       // var body = layer.getChildFrame('body', index);
+      //     //       // $(body).find(".layui-layer-inputbtn0").click();
+      //     //     }
+      //     // });
+      //     return false;
+      //   }
+      //   router.push('/');
+      //   return false;
+      // } else if (res.status == "1") {
+      //   layer.msg("用户名或密码错误", { time: 3000 });
+      //   getImg();
+      // } else if (res.status == "2") {
+      //   layer.msg("验证码错误！", { time: 3000 });
+      //   getImg();
+      // } else if (res.status == "3") {
+      //   layer.msg("用户名或手机号异常!",{time: 3000 });
+      //   getImg();
+      // }
+    });
 }
 </script>
 <style>

@@ -1,0 +1,451 @@
+.share-container {
+	z-index: 999;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.presenter-mark {
+	border: solid 2px #189577 !important;
+}
+
+.arrow-mark {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	border: 5px solid;
+	border-color: transparent #11fb09 #11fb09 transparent;
+}
+
+/* IM */
+.meeting-chat-info{
+	margin: 0px 20px;
+}
+
+.meeting-chat-img {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.meeting-chat-img img {
+	width: auto;
+	height: 50px;
+	border-radius: 50%;	
+}
+
+.meeting-chat-name {
+	position: relative;
+	top: -5px;
+	color: #205448;
+	margin-left: 20px;
+}
+
+.meeting-chat-text {
+	position: relative;
+	top: -15px;
+	padding: 12px 20px;
+	background-color: #f9fbfa;
+	border-radius: 5px;
+	color: #333;
+	word-break: break-all;
+	margin-left: 60px;
+	display: inline-block;
+}
+
+.meeting-chat-text:after {
+	content: '';
+	position: absolute;
+	left: -10px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-style: solid dashed dashed;
+	border-color: #f9fbfa transparent transparent;
+	overflow: hidden;
+	border-width: 10px;
+}
+
+.meeting-chat-info.target {
+	text-align: right;
+}
+
+.target .meeting-chat-name {
+	margin-left: 0;
+	margin-right: 20px
+}
+
+.target .meeting-chat-text {
+	margin-right: 60px;
+	text-align: left;
+	background-color: #e9f5f1;
+	color: #333;
+}
+
+.target .meeting-chat-text:after {
+	left: auto;
+	right: -10px;
+	border-top-color: #e9f5f1;
+}
+
+.meeting-chat-send {
+	position: relative;
+	border-top: 1px solid #eee;
+	padding-top: 5px;
+
+}
+
+.meeting-chat-send button {
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+img.speak.actable {
+	cursor: pointer;
+	max-width: 29px;
+}
+
+img.vedio-button.actable {
+	cursor: pointer;
+	max-width: 29px;
+}
+
+.meeting-info-form-item {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-right: 15px;
+}
+
+.meeting-info-form-label {
+	padding-left: 5px;
+	padding-right: 0px;
+}
+
+.carousel-control-prev {
+	left: 0;
+}
+
+.carousel-control-next {
+	right: 0;
+}
+
+.meeting-system-info-text {
+	text-align: center;
+	line-height: 1.2;
+	font-size: 12px;
+	color: rgb(153, 153, 153);
+	font-family: "Microsoft YaHei";
+}
+
+.meeting-chat-send .layui-layedit {
+	border: none;
+}
+
+.im-select{
+	border: solid 1px #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.im-tools>.iconfont {
+	cursor: pointer;
+	padding: 5px;
+	line-height: 30px;
+	margin: 0 5px;
+}
+
+.im-tools>.iconfont.active {
+	background: #ddd;
+}
+
+.im-face-set {
+	display: none;
+    padding: 5px;
+    position: absolute;
+    background: #FFF;
+    width: 300px;
+    box-shadow: 0px 0px 3px #ccc;
+    bottom: 40px;
+}
+
+.im-font-set {
+	display: none;
+}
+
+.im-face-set.active,
+.im-font-set.active {
+	display: block !important;
+}
+
+#emotionUL li {
+	display: inline;
+	cursor: pointer;
+	margin: 2px;
+}
+
+.font-family-MicrosoftYaHei {
+	font-family: Microsoft YaHei;
+}
+
+.font-family-SimSun {
+	font-family: SimSun;
+}
+
+.font-family-KaiTi {
+	font-family: KaiTi;
+}
+
+.font-family-STKaiti {
+	font-family: STKaiti;
+}
+
+.font-family-STSong {
+	font-family: STSong;
+}
+
+.font-family-STFangsong {
+	font-family: STFangsong;
+}
+
+.font-size-8 {
+	font-size: 8px
+}
+
+.font-size-10 {
+	font-size: 10px
+}
+
+.font-size-12 {
+	font-size: 12px
+}
+
+.font-size-14 {
+	font-size: 14px
+}
+
+.font-size-16 {
+	font-size: 16px
+}
+
+.font-size-18 {
+	font-size: 18px
+}
+
+.font-size-20 {
+	font-size: 20px
+}
+
+.font-size-24 {
+	font-size: 24px
+}
+
+
+.font-family-HWKT {
+	font-family: STKaiti, HWKT;
+}
+
+.font-family-HWXK {
+	font-family: HWXK;
+}
+
+.font-family-SONGTI {
+	font-family: SimSun, SONGTI;
+}
+
+.font-family-WRYHC {
+	font-family: Microsoft Yahei, WRYHC;
+}
+
+@font-face {
+	font-family: 'HWKT';
+	src: url('../font/huawen_kaiti.ttf');
+}
+
+@font-face {
+	font-family: 'HWXK';
+	src: url('../font/huawen_xingkai.ttf');
+}
+
+@font-face {
+	font-family: 'SONGTI';
+	src: url('../font/songti.ttc');
+}
+
+@font-face {
+	font-family: 'WRYHC';
+	src: url('../font/weiruanyahei_cu.ttf');
+}
+
+.btn-select-quick-key {
+	margin-right: 0 !important;
+	margin-left: 5px;
+}
+
+.quick-send-set {
+	font-size: 12px;
+	color: #444;
+	position: absolute;
+	right: 100px;
+    bottom: -15px;
+	z-index: 100;
+	display: none;
+    background-color: white;
+    box-shadow: 0px 0px 3px #ccc;
+}
+.quick-send-item{
+	padding: 8px 10px;
+}
+.quick-send-item:hover{
+	background-color: #189577;
+	color: white;
+}
+
+.quick-send-set.active {
+	display: block !important;
+}
+
+.quick-send-set span {
+	cursor: pointer;
+}
+
+.quick-send-item-icon {
+	opacity: 0;
+	margin-right: 5px;
+}
+
+.quick-send-item-icon.active {
+	opacity: 1 !important;
+}
+
+.vedio.portrait {
+	/*width: 192px !important;*/
+	margin: auto;
+}
+
+.meeting-content-right-item span {
+	position: relative;
+	bottom: 28px;
+	left: 5px;
+	display: inline-block;
+	color: rgb(132, 132, 132);
+	font-weight: bold;
+}
+
+.meeting-content-right-item span.joined {
+	color: #00bac5 !important;
+}
+
+.meeting-content-right-item .speak {
+	float: right;
+	position: relative;
+	bottom: 38px;
+	/* right: 16px; */
+	right: 5px;
+	max-width: 29px;
+}
+
+.meeting-content-right-item .vedio-button {
+	float: right;
+	position: relative;
+	bottom: 38px;
+	right: 5px;
+}
+
+.select_button {
+	background-color: #038b94;
+}
+
+.layui-unselect.layui-layedit-tool {
+	display: none !important;
+	border: none !important;
+}
+
+.meeting-chat-content p {
+	margin: 0px;
+}
+
+.fright {
+	float: right;
+	line-height: normal;
+}
+
+.cameraon {
+	right: 30px;
+}
+
+.camerabar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 30px;
+	background-color: #06b4bf;
+	color: white;
+}
+
+.cameramax {
+	z-index: 999;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.cabtn {
+	display: inline-block;
+	margin: 3px;
+	padding: 3px;
+}
+
+.cabtn:hover {
+	background-color: #059ea6;
+}
+
+.mticon {
+	background-image: url("../images/meeting/icons.png");
+	display: inline-block;
+	cursor: default;
+}
+
+.icon-16 {
+	width: 16px;
+	height: 16px;
+}
+
+.icon-min {
+	background-position: 0px 0px;
+}
+
+.icon-restore {
+	background-position: -16px 0px;
+}
+
+.icon-max {
+	background-position: -32px 0px;
+}
+
+/*龙军*/
+.pdf-btn {
+	display: block;
+	position: absolute;
+	top: 65px;
+	width: 100%;
+	z-index: 999;
+}
+
+.pdf-btn-unshow {
+	display: none;
+
+}
+
+.pad-size {
+	width: 130px;
+}
+
+.layui-btn-sm {
+	max-width: 200px;
+}

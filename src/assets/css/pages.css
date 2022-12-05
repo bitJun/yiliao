@@ -1,0 +1,806 @@
+/* Login Page
+-------------------- */
+.login-bg {
+	background-color: #189577;
+}
+
+.login-bg-head {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+
+.login-bg-foot {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+}
+
+.login-box {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.login-head {
+	margin-bottom: 30px;
+}
+
+.login-title {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
+
+.login-box-body {
+	display: flex;
+	min-width: 900px;
+	min-height: 520px;
+}
+
+.login-lside {
+	background-color: #F9F9F9;
+	border-radius: 10px 0 0 10px;
+	padding: 50px 20px;
+	height: 100%;
+}
+
+.login-rside {
+	background-color: white;
+	border-radius: 0 10px 10px 0;
+	padding: 50px 0;
+	height: 100%;
+}
+
+.login-form {
+	width: 80%;
+	margin: auto;
+}
+
+.login-form-head {
+	text-align: center;
+}
+
+.login-form-title {
+	color: #189577;
+	font-size: 1.5em;
+}
+
+.login-form-body {
+	margin: 30px auto;
+}
+
+.login-form-foot {
+	
+}
+
+.captcha-row {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.login-captcha {
+	width: 140px;
+	height: 50px;
+}
+
+/* Home Page
+-------------------- */
+.map-page {
+	background-image: url(../images/frame/bg-home.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.map-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.map-cell {
+	display: inline-flex;
+	margin: 30px;
+	border: solid 3px white;
+	border-radius: 15px;
+	width: 100px;
+	height: 100px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 10px;
+	transition: 0.2s;
+}
+
+.map-cell:hover {
+	color: white;
+	box-shadow: 0px 0px 5px 3px #aaa;
+}
+
+.map-cell i {
+	margin-bottom: 10px;
+}
+
+/* meeting detail
+-------------------- */
+.met-board {
+	text-align: center;
+	margin: 50px 10px;
+}
+
+.met-board h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.met-board h4 {
+	background-color: #edf3f1;
+	color: #189577;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 30px 10px;
+}
+
+/* meeting center
+-------------------- */
+.meet-gly {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.meet-cell {
+	width: 50%;
+	min-width: 500px;
+	padding: 0 20px 20px 0;
+	box-sizing: border-box;
+}
+
+.meet-cell-inner {
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 8px;
+}
+
+.meet-cell-inner:hover {
+	border: solid 1px #189577;
+}
+
+.meet-cell h3 {
+	font-size: 1.2em;
+}
+
+.meet-cell label {
+	color: #666;
+	margin-right: 10px;
+}
+
+.meet-cell h5 {
+	display: inline-block;
+	font-size: 0.9em;
+}
+
+.mc-head {
+	padding: 15px;
+}
+
+.mc-body {
+	padding: 0 15px;
+}
+
+.mc-foot2 {
+	background-color: #f4f8f7;
+	padding: 5px 10px;
+	margin: 20px 0;
+	border-radius: 3px;
+}
+
+.mc-foot {
+	padding: 0 15px;
+}
+
+.mc-foot .btn-chrome {
+	margin: 0 5px 10px 0;
+}
+
+.mc-name {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.mc-state {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.mc-state1 {
+	background-color: #d9f2ec;
+	color: #189577;
+}
+
+.mc-state2 {
+	background-color: #eee;
+	color: #666;
+}
+
+/* meeting report
+-------------------- */
+.mtd-tbar {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+.mtd-stamp {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(50% - 300px);
+}
+
+/* expert suggest
+-------------------- */
+.exp-side {
+	width: 400px;
+	height: 100%;
+	overflow: auto;
+}
+
+.exp-item {
+	margin: 10px 0;
+	border: solid 1px #eee;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.exp-head {
+	display: flex;
+	align-items: center;
+}
+
+.exp-photo {
+	margin-right: 20px;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+}
+
+.exp-name {
+	font-size: 1.4em;
+	color: #205448;
+}
+
+.exp-role {
+	color: #333;
+	margin-top: 3px;
+}
+
+.exp-org {
+	color: #333;
+}
+
+.exp-time {
+	text-align: right;
+	color: #999;
+}
+
+.exp-memo {
+	margin-top: 10px;
+	color: #333;
+	margin-left: 80px;
+	display: flex;
+}
+.exp-memo::before{
+	display: block;
+    color: #189577;
+    width: 5px;
+    height: 5px;
+    border: solid 2px;
+    border-radius: 50%;
+    position: relative;
+    top: 8px;
+    margin-right: 5px;
+}
+
+/* meeting
+-------------------- */
+.mt-tbar {
+	position: fixed;
+	top: 0;
+	right: -100px;
+	bottom: 0;
+	width: 100px;
+	z-index: 1;
+	box-shadow: -3px 0 3px #eee;
+	background-color: white;
+}
+
+.mt-tbar-inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.mt-tbtn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.mt-tbtn:hover {
+	background-color: #eee;
+}
+
+.mt-tbtn+.mt-tbtn {
+	border-top: solid 1px #eee;
+}
+
+.mt-tbtn header {
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.mt-tbtn footer {
+	margin-top: 10px;
+}
+
+.mt-tbar2 {
+	margin: 15px 10px;
+    background-color: #edf3f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mt-tbar2 button{
+	margin: 4px 2px;
+}
+
+.meet-e-side {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	bottom: 0;
+	background-color: #f0f6f6;
+}
+
+.meet-e-nav {
+	position: absolute;
+	left: 100px;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: solid 1px #eee;
+	padding: 5px 10px;
+}
+
+.meet-e-nav .layui-btn {
+	background-color: unset;
+	color: black;
+}
+
+.meet-e-body {
+	position: absolute;
+	left: 100px;
+	top: 40px;
+	right: 0;
+	bottom: 0;
+	border: solid 1px #eee;
+	border-top: none;
+}
+
+.meet-dev-side {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	bottom: 0;
+	border-right: solid 1px #ccc;
+}
+
+.meet-dev-nav {
+	position: absolute;
+	left: 210px;
+	top: 0;
+	right: 0;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-weight: bold;
+}
+
+.meet-dev-body {
+	position: absolute;
+	left: 210px;
+	top: 40px;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+}
+
+.meet-video-place {
+	background-color: black;
+	height: 100%;
+}
+
+.meet-exp-board {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.meet-exp-item {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.meet-exp-item-f {
+	display: flex;
+	flex-direction: row;
+	background-color: #ccc;
+	padding: 10px;
+	align-items: center;
+}
+
+.meet-exp-item-fb {
+	flex: 1;
+}
+
+.meet-exp-item-ff {
+	
+}
+
+.meet-exp-item-b {
+	flex: 1;
+}
+
+.meet-exp-item-join {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	background-color: #eee;
+}
+
+.meet-exp-item-s1 {
+	width: 400px;
+	height: 350px;
+}
+
+.meet-im-body {
+	overflow: auto;
+}
+
+.meet-im-msg {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.meet-im-msg-h {
+	text-align: center;
+}
+
+.meet-im-photo {
+	width: 50px;
+	height: 50px;
+}
+
+.meet-im-msg-b {
+	margin: 0 20px;
+	background-color: #eee;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.mt-dv-tools {
+	display: inline-block;
+	float: right;		
+}
+
+.mt-uv-board {
+	height:100%;
+}
+
+.mt-uv-cell {
+	/*min-width: 480px;
+	min-height: 270px;*/
+	position:relative;
+	/*margin: 5px;*/
+	float: left;
+    box-sizing: content-box;
+    padding-bottom:56.25%;
+    height:0;
+    width:100%;
+}
+
+.mt-uv-cell video{
+	height: 100%;
+}
+
+.mt-uv-body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: #999;
+}
+
+.mt-uv-head {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	color: #189577;
+	font-weight: bold;
+}
+
+.mt-uv-foot {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+}
+
+/* patient list
+-------------------- */
+.ptl-gly {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ptl-cell {
+	width: 25%;
+	min-width: 300px;
+	padding: 0 20px 20px 0;
+	box-sizing: border-box;
+}
+
+.ptl-cell label {
+	color: #999;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.ptl-cell-inner {
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 8px;
+}
+
+.ptl-cell-inner:hover {
+	border: solid 1px #189577;
+}
+
+.ptl-cell-head, .ptl-cell-foot {
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ptl-cell-body {
+	background-color: #f4f8f7;
+	margin: 5px 15px;
+	padding: 8px 15px;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+}
+
+.ptl-data-name {
+	color: #189577;
+	font-size: 1.3em;
+}
+
+.ptl-data-gender {
+	margin: 0 40px;
+}
+
+/* patient detail
+-------------------- */
+.ptd-board {
+	margin: 10px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ptd-avatar {
+	
+}
+
+.ptd-data-name {
+	margin: 10px 0 10px 0;
+	font-size: 1.5em;
+}
+
+.ptd-data-sex {
+	color: #666;
+}
+
+.ptd-vline {
+	display: inline-block;
+	height: 14px;
+	vertical-align: middle;
+	border-left: dotted 1px #999;
+	margin: 0 10px;
+}
+
+/* patient report
+-------------------- */
+.rpt-page {
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff;
+	min-width: 800px;
+}
+
+.rpt-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.rpt-title2 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.rpt-line {
+	border: solid 1px black;
+	margin: 5px 0px;
+}
+
+.rpt-content {
+	padding: 0px 20px;
+}
+
+.rpt-table, .rpt-data-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.rpt-table td, .rpt-data-table td {
+	text-align: left;
+	padding: 3px;
+}
+
+.rpt-section {
+	margin: 20px 0px;
+}
+
+.rpt-sec-title {
+	font-weight: bold;
+}
+
+.rpt-sec-body {
+	margin: 10px 30px;
+}
+
+.rpt-data-table th, .rpt-data-table td {
+	border: solid 1px #ccc;
+	padding: 8px 15px;
+}
+
+.rpt-data-table thead th {
+	padding: 15px 5px;
+	text-align: center;
+}
+
+.rpt-data-table tfoot th {
+	padding: 5px;
+}
+
+.rpt-label {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.rpt-gly, .rpt-gly li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.rpt-gly {
+	margin: 20px auto;
+	width: 600px;
+	text-align: center;
+}
+
+.rpt-gly li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.rpt-gly li img {
+	width: 250px;
+	height: 250px;
+}
+
+.rpt-rcol {
+	width: 180px;
+}
+
+
+/* statistic
+-------------------- */
+.stat-sum {	
+	color: #FF5722;
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+
+.video-item{
+	width:calc(50% - 10px);
+	float:left;
+	margin:5px;
+	position: relative;
+	min-width:100px;
+}
+
+.video-item-presenter-marker{
+	border: 3px solid #11fb09;
+    box-sizing: border-box;
+    margin-bottom:0;
+}
+
+.presenter-mark{
+	border:0 !important;
+}
+
+.video-item-presenter-marker .mt-uv-cell{
+	padding-bottom:55.5%;
+}
+
+/* referral
+-------------------- */
+.ref-stamp {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(85% - 30px);
+}
+
+.progress-style{
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 100px;
+    z-index: 100;
+    left: 35%;
+}

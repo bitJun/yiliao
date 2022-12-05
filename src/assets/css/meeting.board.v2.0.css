@@ -1,0 +1,841 @@
+.loading {
+	z-index: 99999;
+	background: white;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.menu {
+	background:#edf3f1 !important;
+	border: 0 !important;
+	display: inline-block;
+}
+
+.easyui-menu {
+	background:#ffffff !important;
+	width: 6% !important;
+	min-width:100px !important;
+	height: 100% !important;
+	overflow: auto !important;
+	border-right: 1px solid #d2ddd9 !important;
+	border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.easyui-menu::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+.easyui-menu::-webkit-scrollbar-thumb {
+	background: #c7d0cd;
+}
+
+.easyui-menu::-webkit-scrollbar-thumb:window-inactive {
+	background: #c7d0cd;
+}
+
+
+.menu .menu-line {
+	display: none !important;
+}
+
+.menu .menu-icon {
+	left: 8px !important;
+}
+
+.easyui-menu>.menu-item {
+	height: 8.33% !important;
+	min-height:70px !important;
+	box-sizing: border-box;
+	display: flex;
+    align-items: center;
+}
+
+.menu-13>.menu-item {
+	height: 7.69% !important;
+}
+
+#control_select
+{
+    margin-top: 0px;
+}
+.menu>.menu-item>.menu-rightarrow {
+	background: url(../images/board/icons/page/sjl.png) center no-repeat !important;
+    right: calc(50% - 40px) !important;
+    margin-top: 0;
+    top: calc(50% - 15px);
+}
+
+.menu>.menu-active>.menu-rightarrow {
+	background: url(../images/board/icons/page/sj.png) center no-repeat !important;
+}
+
+.menu .menu-text {
+	width: 100% !important;
+	text-align: center;
+	-webkit-touch-callout: none; 
+-webkit-user-select: none; 
+-khtml-user-select: none; 
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none; 
+}
+
+.easyui-menu>.menu-item>.menu-text {
+	height: auto !important;
+    padding: 0;
+    line-height: initial !important;
+}
+
+.easyui-menu>.menu-item>.menu-text img {
+	display: block;
+	width: 21px;
+	height: 17px;
+	margin: 0 auto;
+}
+
+.easyui-menu>.menu-item>.menu-text>span>span{
+	margin-bottom:5px;
+}
+
+.easyui-menu>.menu-item>.menu-text>span{
+	font-size:1em !important;
+}
+
+.child-menu .menu-rightarrow {
+	display: none !important;
+}
+
+.child-menu .menu-text {
+	text-align: left;
+	font-size: 13px;
+	padding-left: 30px !important;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.child-menu-width-120 {
+	width: 190px !important;
+}
+
+.child-menu-width-130 {
+	width: 190px !important;
+}
+
+.menu .menu-active {
+	background: #189577 !important;
+	color: white !important;
+	border-radius: 0 !important;
+}
+
+.easyui-menu .menu-item .page {
+	background: url(../images/board/icons/page/yml.png) no-repeat center center;
+	width: 21px;
+	height: 17px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .page {
+	background: url(../images/board/icons/page/ymb.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .rate {
+	background: url(../images/board/icons/rate/rate-menu.png) no-repeat center center;
+	width: 18px;
+	height: 18px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .rate {
+	background: url(../images/board/icons/rate/rate-menu-a.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .page-type {
+	background: url(../images/board/icons/page/yml.png) no-repeat center center;
+	width: 21px;
+	height: 17px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .page-type {
+	background: url(../images/board/icons/page/ymb.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .clear {
+	background: url(../images/board/icons/clear/cleana.png) no-repeat center center;
+	width: 21px;
+	height: 17px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .clear {
+	background: url(../images/board/icons/clear/clean.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .zoom {
+	background: url(../images/board/icons/zoom/zooma.png) no-repeat center center;
+	width: 19px;
+	height: 18px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .zoom {
+	background: url(../images/board/icons/zoom/zoom.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .delete {
+	background: url(../images/board/icons/delete/erasea.png) no-repeat center center;
+	width: 18px;
+	height: 18px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .delete {
+	background: url(../images/board/icons/delete/erase.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .setting {
+	background: url(../images/board/icons/setting/settinga.png) no-repeat center center;
+	width: 22px;
+	height: 18px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .setting {
+	background: url(../images/board/icons/setting/setting.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .file {
+	background: url(../images/board/icons/file/cleana.png) no-repeat center center;
+	width: 21px;
+	height: 17px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .file {
+	background: url(../images/board/icons/file/clean.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .revoke {
+	background: url(../images/board/icons/revoke/c&ra.png) no-repeat center center;
+	width: 38px;
+	height: 14px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .revoke {
+	background: url(../images/board/icons/revoke/c&r.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .brush {
+	background: url(../images/board/icons/brush/graphicsa.png) no-repeat center center;
+	width: 19px;
+	height: 19px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .brush {
+	background: url(../images/board/icons/brush/graphics.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .text {
+	background: url(../images/board/icons/text/Ta.png) no-repeat center center;
+	width: 15px;
+	height: 15px;
+	display: block;
+	margin: 0 auto;
+	background-size: 12px;
+}
+
+.easyui-menu .menu-active .text {
+	background: url(../images/board/icons/text/T.png) no-repeat center center;
+}
+
+.easyui-menu .menu-item .select {
+	background: url(../images/board/icons/select/sss.png) no-repeat center center;
+	width: 11px;
+	height: 15px;
+	display: block;
+	margin: 0 auto;
+}
+
+.easyui-menu .menu-active .select {
+	background: url(../images/board/icons/select/aaa.png) no-repeat center center;
+}
+
+.icon-page-add {
+	background: url(../images/board/icons/page/add0.png) no-repeat center center;
+}
+
+.menu-active .icon-page-add {
+	background: url(../images/board/icons/page/add.png) no-repeat center center;
+}
+
+.icon-page-delete {
+	background: url(../images/board/icons/page/del0.png) no-repeat center center;
+}
+
+.menu-active .icon-page-delete {
+	background: url(../images/board/icons/page/del.png) no-repeat center center;
+}
+
+.icon-page-type {
+	background: url(../images/board/icons/page/yml.png) no-repeat center center;
+}
+
+.menu-active .icon-page-type {
+	background: url(../images/board/icons/page/ymb.png) no-repeat center center;
+}
+
+.icon-page-previous {
+	background: url(../images/board/icons/page/previous0.png) no-repeat center center;
+}
+
+.menu-active .icon-page-previous {
+	background: url(../images/board/icons/page/previous.png) no-repeat center center;
+}
+
+.icon-page-next {
+	background: url(../images/board/icons/page/next0.png) no-repeat center center;
+}
+
+.menu-active .icon-page-next {
+	background: url(../images/board/icons/page/next.png) no-repeat center center;
+}
+
+.icon-clear-graffiti {
+	background: url(../images/board/icons/clear/c-graffiti0.png) no-repeat center center;
+}
+
+.menu-active .icon-clear-graffiti {
+	background: url(../images/board/icons/clear/c-graffiti.png) no-repeat center center;
+}
+
+.icon-clear-graffiti-bg {
+	background: url(../images/board/icons/clear/c-Graffiti-bg0.png) no-repeat center center;
+}
+
+.menu-active .icon-clear-graffiti-bg {
+	background: url(../images/board/icons/clear/c-Graffiti-bg.png) no-repeat center center;
+}
+
+.icon-graffiti-img {
+	background: url(../images/board/icons/clear/c-Graffiti-bg0.png) no-repeat center center;
+}
+
+.menu-active .icon-graffiti-img {
+	background: url(../images/board/icons/clear/c-Graffiti-bg.png) no-repeat center center;
+}
+
+.icon-clear-bg {
+	background: url(../images/board/icons/clear/c-bg0.png) no-repeat center center;
+}
+
+.menu-active .icon-clear-bg {
+	background: url(../images/board/icons/clear/c-bg.png) no-repeat center center;
+}
+
+.icon-zoom-in {
+	background: url(../images/board/icons/zoom/zoomIna.png) no-repeat center center;
+	    width: 18px;
+    height: 18px
+}
+
+.menu-active .icon-zoom-in {
+	background: url(../images/board/icons/zoom/zoomIn.png) no-repeat center center;
+}
+
+.icon-zoom-out {
+	background: url(../images/board/icons/zoom/zoomOuta.png) no-repeat center center;
+	    width: 18px;
+    height: 18px
+}
+
+.menu-active .icon-zoom-out {
+	background: url(../images/board/icons/zoom/zoomOut.png) no-repeat center center;
+}
+
+.icon-delete-eraser {
+	background: url(../images/board/icons/delete/erasesa.png) no-repeat center center;
+}
+
+.menu-active .icon-delete-eraser {
+	background: url(../images/board/icons/delete/erases.png) no-repeat center center;
+}
+
+.icon-file-add {
+	background: url(../images/board/icons/file/upda.png) no-repeat center center;
+}
+
+.menu-active .icon-file-add {
+	background: url(../images/board/icons/file/upd.png) no-repeat center center;
+}
+
+.icon-file-del {
+	background: url(../images/board/icons/file/dela.png) no-repeat center center;
+}
+
+.menu-active .icon-file-del {
+	background: url(../images/board/icons/file/del.png) no-repeat center center;
+}
+
+.icon-file-switch {
+	background: url(../images/board/icons/file/cutovera.png) no-repeat center center;
+}
+
+.menu-active .icon-file-switch {
+	background: url(../images/board/icons/file/cutover.png) no-repeat center center;
+}
+
+.icon-revoke-cancel {
+	background: url(../images/board/icons/revoke/cancela.png) no-repeat center center;
+}
+
+.menu-active .icon-revoke-cancel {
+	background: url(../images/board/icons/revoke/cancel.png) no-repeat center center;
+}
+
+.icon-revoke-restore {
+	background: url(../images/board/icons/revoke/restorea.png) no-repeat center center;
+}
+
+.menu-active .icon-revoke-restore {
+	background: url(../images/board/icons/revoke/restore.png) no-repeat center center;
+}
+
+.icon-brush-brush {
+	background: url(../images/board/icons/brush/brusha.png) no-repeat center center;
+}
+
+.menu-active .icon-brush-brush {
+	background: url(../images/board/icons/brush/brush.png) no-repeat center center;
+}
+
+.icon-brush-line {
+	background: url(../images/board/icons/brush/linea.png) no-repeat center center;
+}
+
+.menu-active .icon-brush-line {
+	background: url(../images/board/icons/brush/line.png) no-repeat center center;
+}
+
+.icon-brush-h-rectangle {
+	background: url(../images/board/icons/brush/h-rectanglea.png) no-repeat center center;
+}
+
+.menu-active .icon-brush-h-rectangle {
+	background: url(../images/board/icons/brush/h-rectangle.png) no-repeat center center;
+}
+
+.icon-brush-s-rectangle {
+	background: url(../images/board/icons/brush/s-rectanglea.png) no-repeat center center;
+}
+
+.menu-active .icon-brush-s-rectangle {
+	background: url(../images/board/icons/brush/s-rectangle.png) no-repeat center center;
+}
+
+.icon-brush-h-oval {
+	background: url(../images/board/icons/brush/h-ovala.png) no-repeat center center;
+	width:18px;
+	height:14px;
+}
+
+.menu-active .icon-brush-h-oval {
+	background: url(../images/board/icons/brush/h-oval.png) no-repeat center center;
+}
+
+.icon-brush-s-oval {
+	background: url(../images/board/icons/brush/s-ovala.png) no-repeat center center;
+	width:18px;
+	height:14px;
+}
+
+.menu-active .icon-brush-s-oval {
+	background: url(../images/board/icons/brush/s-oval.png) no-repeat center center;
+}
+
+.icon-text-input {
+	background: url(../images/board/icons/text/Ta.png) no-repeat center center;
+	left: 10px;
+}
+
+.menu-active .icon-text-input {
+	background: url(../images/board/icons/text/T.png) no-repeat center center;
+	left: 10px;
+}
+
+.icon-text-setting-color {
+	background: url(../images/board/icons/text/input-color.png) no-repeat center center;
+	left: 10px;
+}
+
+.menu-active .icon-text-setting-color {
+	background: url(../images/board/icons/text/input-color-a.png) no-repeat center center;
+	left: 10px;
+}
+
+.menu .icon-text-setting-font {
+	background: url(../images/board/icons/text/font-a.png) no-repeat center center;
+	left: 14px !important;
+}
+
+.icon-select-click {
+	background: url(../images/board/icons/select/click-sa.png) no-repeat center center;
+}
+
+.menu-active .icon-select-click {
+	background: url(../images/board/icons/select/click-s.png) no-repeat center center;
+}
+
+.icon-select-frame {
+	background: url(../images/board/icons/select/frame-sa.png) no-repeat center center;
+}
+
+.menu-active .icon-select-frame {
+	background: url(../images/board/icons/select/frame-s.png) no-repeat center center;
+}
+
+
+
+.icon-setting-background-color-c {
+	background: url(../images/board/icons/setting/background-color-c.png) no-repeat center center;
+}
+
+.menu-active .icon-setting-background-color-c {
+	background: url(../images/board/icons/setting/background-color-c-a.png) no-repeat center center;
+}
+
+.icon-setting-background-color-g {
+	background: url(../images/board/icons/setting/background-color-g.png) no-repeat center center;
+}
+
+.menu-active .icon-setting-background-color-g {
+	background: url(../images/board/icons/setting/background-color-g-a.png) no-repeat center center;
+}
+
+.icon-setting-pen-color {
+	background: url(../images/board/icons/setting/pen-color.png) no-repeat center center;
+	background-size: contain;
+}
+
+.menu-active .icon-setting-pen-color {
+	background: url(../images/board/icons/setting/pen-color-a.png) no-repeat center center;
+	background-size: contain;
+}
+
+.icon-setting-line-size {
+	background: url(../images/board/icons/setting/line-size.png) no-repeat center center;
+}
+
+.menu-active .icon-setting-line-size {
+	background: url(../images/board/icons/setting/line-size-a.png) no-repeat center center;
+}
+
+.icon-rate-1 {
+	background: url(../images/board/icons/rate/rate-1.png) no-repeat center center;
+	background-size: 16px 14px;
+}
+
+
+.menu-active .icon-rate-1 {
+	background: url(../images/board/icons/rate/rate-1-1.png) no-repeat center center;
+	background-size: 16px 14px;
+}
+
+.icon-rate-2 {
+	background: url(../images/board/icons/rate/rate-2.png) no-repeat center center;
+		background-size: 16px;
+}
+
+.menu-active .icon-rate-2 {
+	background: url(../images/board/icons/rate/rate-2-2.png) no-repeat center center;
+		background-size: 16px;
+}
+
+.icon-rate-3 {
+	background: url(../images/board/icons/rate/rate-3.png) no-repeat center center;
+	background-size: 16px;
+}
+
+.menu-active .icon-rate-3 {
+	background: url(../images/board/icons/rate/rate-3-3.png) no-repeat center center;
+		background-size: 16px;
+}
+
+.icon-rate-4 {
+	background: url(../images/board/icons/rate/rate-5.png) no-repeat center center;
+	background-size: 16px 14px;
+}
+
+.menu-active .icon-rate-4 {
+	background: url(../images/board/icons/rate/rate-5-5.png) no-repeat center center;
+	background-size: 16px 14px;
+}
+
+.icon-rate-5 {
+	background: url(../images/board/icons/rate/rate-4.png) no-repeat center center;
+		background-size: 16px;
+}
+
+.menu-active .icon-rate-5 {
+	background: url(../images/board/icons/rate/rate-4-4.png) no-repeat center center;
+		background-size: 16px;
+}
+
+.menu-active .choiceline input+label::before {
+	background-color: white !important;
+}
+
+
+
+.choiceline span {
+	margin-top: 11px;
+	float: left;
+	height: 22px;
+	width: 22px;
+	border-radius: 2px;
+	position: relative;
+	margin-right: 1px;
+}
+
+.menu-active .choiceline span {
+	/*border: 1px solid #c7d0cd;*/
+}
+
+.cvs-page {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	background: #fff;
+}
+
+.input_cxcolor {
+	width: 30px;
+	height: 18px;
+	padding: 0;
+	border: 1px solid white;
+	background-image: url(../images/board/icons/setting/down-arrow.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	cursor: pointer;
+	float: right;
+	margin-top: 8px;
+	margin-right: 5px;
+	
+}
+
+.child-menu-setting .menu-text {
+	/*padding-left: 10px !important;*/
+}
+
+.child-menu-setting .menu-active {
+	/*background: #f0f6f6 !important;
+	color: #444 !important;
+	border-color: transparent;*/
+}
+
+.cxcolor {
+	display: block !important;
+}
+
+.choiceline {
+	margin-top: -5px;
+	float: right;
+}
+
+.choiceline span>input {
+	display: none;
+}
+
+.choiceline span>label {
+	position: relative;
+}
+
+.ss label::before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #189577;
+	margin-right: 6px;
+	top: 7px;
+	position: absolute;
+	left: 7px;
+}
+
+.bb label::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #189577;
+	margin-right: 6px;
+	top: 4px;
+	position: absolute;
+	left: 4px;
+
+
+}
+
+.dd label::before {
+	content: "";
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #189577;
+	margin-right: 6px;
+	top: 5.5px;
+	position: absolute;
+	left: 5.5px;
+}
+
+.choiceline input:checked+label::before {
+	/*background-color: #ef4238;*/
+}
+
+.choiceline span.active {
+	border: 1px solid #c7d0cd;
+	box-sizing: border-box;
+}
+
+.menu-active .choiceline span.active {
+	border: 1px solid white !important;
+}
+
+
+#textIn .menu-text {
+	padding-left: 30px !important;
+}
+
+.prevBoard,
+.nextBoard {
+	width: 38px;
+	height: 38px;
+	background: url(../images/board/icons/page/4.png) no-repeat center center;
+	position: absolute;
+	left:calc(10% + 28px);
+	top: calc(50% - 19px);
+	z-index: 999;
+}
+
+.nextBoard {
+	background: url(../images/board/icons/page/1.png) no-repeat center center;
+	position: absolute;
+	right: 28px;
+	top: calc(50% - 19px);
+	left: initial;
+}
+
+.page-info.menu-active {
+	color: red !important;
+	background: transparent !important;
+	border-color: transparent !important;
+}
+
+.page-info .menu-text span {
+	font-size: 18px !important;
+	font-weight: bold !important;
+	color: #189577 !important;
+}
+
+.page-info .menu-text .currentPage {
+	color: red !important;
+}
+
+
+.child-menu .menu-item {
+	border: 0 !important;
+	border-bottom: 1px solid white !important;
+	border-color: white;
+}
+
+.child-menu .menu-item:last-of-type {
+	border-bottom: 0 !important;
+}
+
+select.set ,span.set{
+	background-color: white;
+	background-image: url(../images/board/icons/page/downarrow.png);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 5px) center;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 1px solid #e4e8e8;
+	position: absolute;
+	left: 10px;
+	padding-left: 25px;
+	color:black !important;
+}
+.hideItem{
+	display:none !important;
+}
+#ulFonts{
+	position: fixed;
+    width: 110px;
+    left: 0;
+    background-color: white;
+    z-index: 99999;
+    top: 326px;
+    left: 328px;
+    border: 1px solid #e4e8e8;
+    border-top: 0;
+    display:none;
+}
+#ulFontSize{
+	position: fixed;
+    width: 60px;
+    left: 0;
+    background-color: white;
+    z-index: 99999;
+    border: 1px solid #e4e8e8;
+    border-top: 0;
+    display:none;
+}
+#ulFonts li{
+	background-color: white;
+	background-image: url(../images/board/icons/text/font-a.png);
+	background-repeat: no-repeat;
+	background-position: 4px center;
+    padding-left: 22px;
+    color:black !important;
+}
+#ulFonts li:first-child{
+	background-image:none !important;
+	padding-left: 8px;
+}
+#ulFontSize li{
+	background-color: white;
+    text-align:center;
+    color:black !important;
+}
+
+#ulFonts li.active{
+	background-color:#189577;
+	color:white !important;
+    background-image: url(../images/board/icons/text/font-a-white.png);
+}
+
+#ulFontSize li.active{
+	background-color:#189577;
+	color:white !important;
+}

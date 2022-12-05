@@ -1,0 +1,986 @@
+/* Icons
+-------------------- */
+.app-icon {
+	background-image: url(../images/frame/icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icobag {}
+
+.ico20 {
+	width: 20px;
+	height: 20px;
+}
+
+.ico20-add {
+	background-position: 0 0;
+}
+
+.ico20-edit {
+	background-position: -20px 0;
+}
+
+.ico20-del {
+	background-position: -40px 0;
+}
+
+.ico20-detail {
+	background-position: -60px 0;
+}
+
+.ico20-break {
+	background-position: -80px 0;
+}
+
+.ico20-ok {
+	background-position: -100px 0;
+}
+
+.ico20-no {
+	background-position: -120px 0;
+}
+
+.ico20-save {
+	background-position: -140px 0;
+}
+
+.ico20-search {
+	background-position: -160px 0;
+}
+
+.ico20-upload {
+	background-position: -180px 0;
+}
+
+.ico20-download {
+	background-position: -200px 0;
+}
+
+.ico20-import {
+	background-position: -220px 0;
+}
+
+.ico20-view {
+	background-position: -240px 0;
+}
+
+.ico20-cut {
+	background-position: -260px 0;
+}
+
+.ico20-start {
+	background-position: -280px 0;
+}
+
+.ico20-join {
+	background-position: -300px 0;
+}
+
+.ico20-other {
+	background-position: -320px 0;
+}
+
+.ico20-voice {
+	background-position: -340px 0;
+}
+
+.ico20-stat-voice {
+	background-position: -360px 0;
+}
+
+.ico20-stat-time {
+	background-position: -380px 0;
+}
+
+.ico20-dv {
+	background-position: -400px 0;	
+}
+
+.ico20-up {
+	background-position: -420px 0;	
+}
+
+.ico20-down {
+	background-position: -440px 0;	
+}
+
+.ico20-share {
+	background-position: -460px 0;
+}
+
+.ico20-dv-play {
+	background-position: -480px 0;	
+}
+
+.ico20-dv-stop {
+	background-position: -500px 0;	
+}
+
+.ico20-folder {
+	background-position: -520px 0;	
+}
+
+.ico20-referral {
+	background-position: -540px 0;	
+}
+
+.icobag:hover .ico20-add,
+.icobag.selected .ico20-add,
+.ico20-add-w {
+	background-position: 0 -20px;
+}
+
+.icobag:hover .ico20-edit,
+.icobag.selected .ico20-edit,
+.ico20-edit-w {
+	background-position: -20px -20px;
+}
+
+.icobag:hover .ico20-del,
+.icobag.selected .ico20-del,
+.ico20-del-w {
+	background-position: -40px -20px;
+}
+
+.icobag:hover .ico20-detail,
+.icobag.selected .ico20-detail,
+.ico20-detail-w {
+	background-position: -60px -20px;
+}
+
+.icobag:hover .ico20-break,
+.icobag.selected .ico20-break,
+.ico20-break-w {
+	background-position: -80px -20px;
+}
+
+.icobag:hover .ico20-ok,
+.icobag.selected .ico20-ok,
+.ico20-ok-w {
+	background-position: -100px -20px;
+}
+
+.icobag:hover .ico20-no,
+.icobag.selected .ico20-no,
+.ico20-no-w {
+	background-position: -120px -20px;
+}
+
+.icobag:hover .ico20-save,
+.icobag.selected .ico20-save,
+.ico20-save-w {
+	background-position: -140px -20px;
+}
+
+.icobag:hover .ico20-search,
+.icobag.selected .ico20-search,
+.ico20-search-w {
+	background-position: -160px -20px;
+}
+
+.icobag:hover .ico20-upload,
+.icobag.selected .ico20-upload,
+.ico20-upload-w {
+	background-position: -180px -20px;
+}
+
+.icobag:hover .ico20-download,
+.icobag.selected .ico20-download,
+.ico20-download-w {
+	background-position: -200px -20px;
+}
+
+.icobag:hover .ico20-import,
+.icobag.selected .ico20-import,
+.ico20-import-w {
+	background-position: -220px -20px;
+}
+
+.icobag:hover .ico20-view,
+.icobag.selected .ico20-view,
+.ico20-view-w {
+	background-position: -240px -20px;
+}
+
+.icobag:hover .ico20-cut,
+.icobag.selected .ico20-cut,
+.ico20-cut-w {
+	background-position: -260px -20px;
+}
+
+.icobag:hover .ico20-start,
+.icobag.selected .ico20-start,
+.ico20-start-w {
+	background-position: -280px -20px;
+}
+
+.icobag:hover .ico20-join,
+.icobag.selected .ico20-join,
+.ico20-join-w {
+	background-position: -300px -20px;
+}
+
+.icobag:hover .ico20-other,
+.icobag.selected .ico20-other,
+.ico20-other-w {
+	background-position: -320px -20px;
+}
+
+.icobag:hover .ico20-voice,
+.icobag.selected .ico20-voice,
+.ico20-voice-w {
+	background-position: -340px -20px;
+}
+
+.icobag:hover .ico20-share,
+.icobag.selected .ico20-share,
+.ico20-share-w {
+	background-position: -460px -20px;
+}
+
+.icobag:hover .ico20-dv-play,
+.icobag.selected .ico20-dv-play,
+.ico20-dv-play-w {
+	background-position: -480px -20px;
+}
+
+.icobag:hover .ico20-dv-stop,
+.icobag.selected .ico20-dv-stop,
+.ico20-dv-stop-w {
+	background-position: -500px -20px;
+}
+
+.icobag:hover .ico20-folder,
+.icobag.selected .ico20-folder,
+.ico20-folder-w {
+	background-position: -520px -20px;
+}
+
+.icobag:hover .ico20-referral,
+.icobag.selected .ico20-folder,
+.ico20-referral-w {
+	background-position: -540px -20px;
+}
+
+.ico30 {
+	width: 30px;
+	height: 30px;
+}
+
+.ico30-user {
+	background-position: 0 -40px;
+}
+
+.ico30-lock {
+	background-position: -30px -40px;
+}
+
+.ico30-email {
+	background-position: -60px -40px;
+}
+
+.ico30-return {
+	background-position: -90px -40px;
+}
+
+.ico30-menu {
+	background-position: -120px -40px;
+}
+
+.ico30-home {
+	background-position: -150px -40px;
+}
+
+.ico30-user2 {
+	background-position: -180px -40px;
+}
+
+.ico30-patient {
+	background-position: -210px -40px;
+}
+
+.ico30-chart {
+	background-position: -240px -40px;
+}
+
+.ico30-meet {
+	background-position: -270px -40px;
+}
+
+.ico30-cloud {
+	background-position: -300px -40px;
+}
+
+.ico30-video {
+	background-position: -330px -40px;
+}
+
+.ico30-log {
+	background-position: -360px -40px;
+}
+
+.ico30-rpt1 {
+	background-position: -390px -40px;
+}
+
+.ico30-exit {
+	background-position: -420px -40px;
+}
+
+.ico30-res {
+	background-position: -450px -40px;
+}
+
+.ico30-set {
+	background-position: -480px -40px;
+}
+
+.ico30-rpt2 {
+	background-position: -510px -40px;
+}
+
+.ico30-basic3 {
+	background-position: -540px -70px;
+}
+
+.ico30-cloud3 {
+	background-position: -570px -70px;
+}
+
+.ico30-video3 {
+	background-position: -600px -70px;
+}
+
+.ico30-rpt3 {
+	background-position: -630px -70px;
+}
+
+.ico30-referral {
+	background-position: -660px -40px;
+}
+
+.ico30-all {
+	background-position: 0 -100px;
+}
+
+.ico30-audit {
+	background-position: -30px -100px;
+}
+
+.ico30-ok {
+	background-position: -60px -100px;
+}
+
+.ico30-no {
+	background-position: -90px -100px;
+}
+
+.ico30-doing {
+	background-position: -120px -100px;
+}
+
+.ico30-finish {
+	background-position: -150px -100px;
+}
+
+.ico30-cancel {
+	background-position: -180px -100px;
+}
+
+.ico30-his {
+	background-position: -210px -100px;
+}
+
+.ico30-lis {
+	background-position: -240px -100px;
+}
+
+.ico30-ris {
+	background-position: -270px -100px;
+}
+
+.ico30-pacs {
+	background-position: -300px -100px;
+}
+
+.ico30-video2 {
+	background-position: -330px -100px;
+}
+
+.ico30-time {
+	background-position: -360px -100px;
+}
+
+.ico30-count {
+	background-position: -390px -100px;
+}
+
+.ico30-voice {
+	background-position: -420px -100px;
+}
+
+.ico30-sms {
+	background-position: -450px -100px;
+}
+
+.ico30-mt-screen {
+	background-position: -480px -100px;
+}
+
+.ico30-mt-record {
+	background-position: -510px -100px;
+}
+
+.ico30-mt-invite {
+	background-position: -540px -100px;
+}
+
+.ico30-mt-transfer {
+	background-position: -570px -100px;
+}
+
+.ico30-mt-cloud {
+	background-position: -600px -100px;
+}
+
+.ico30-mt-exit {
+	background-position: -630px -100px;
+}
+
+.ico30-mt-play {
+	background-position: -660px -100px;
+}
+
+.ico30-audit2 {
+	background-position: -480px -130px;
+}
+
+.ico30-ok2 {
+	background-position: -510px -130px;
+}
+
+.ico30-time2 {
+	background-position: -540px -130px;
+}
+
+.ico30-doing2 {
+	background-position: -570px -130px;
+}
+
+.ico30-no2 {
+	background-position: -600px -130px;
+}
+
+.ico30-cancel2 {
+	background-position: -630px -130px;
+}
+
+.ico30-finish2 {
+	background-position: -660px -130px;
+}
+
+.ico30-pat-basic {
+	background-position: 0px -160px;
+}
+
+.ico30-pat-sick {
+	background-position: -30px -160px;
+}
+
+.ico30-pat-drug {
+	background-position: -60px -160px;
+}
+
+.ico30-pat-lab {
+	background-position: -90px -160px;
+}
+
+.ico30-pat-rpt {
+	background-position: -120px -160px;
+}
+
+.ico30-mp-eboard {
+	background-position: -150px -160px;
+}
+
+.ico30-mp-dvideo {
+	background-position: -180px -160px;
+}
+
+.ico30-mp-info {
+	background-position: -210px -160px;
+}
+
+.ico30-mp-pat {
+	background-position: -240px -160px;
+}
+
+.ico30-mp-rpt {
+	background-position: -270px -160px;
+}
+
+.ico30-mp-uvideo {
+	background-position: -300px -160px;
+}
+
+.ico30-mp-screen {
+	background-position: -330px -160px;
+}
+
+.icobag:hover .ico30-all,
+.icobag.selected .ico30-all,
+.ico30-all-w {
+	background-position: 0 -130px;
+}
+
+.icobag:hover .ico30-audit,
+.icobag.selected .ico30-audit,
+.ico30-audit-w {
+	background-position: -30px -130px;
+}
+
+.icobag:hover .ico30-ok,
+.icobag.selected .ico30-ok,
+.ico30-ok-w {
+	background-position: -60px -130px;
+}
+
+.icobag:hover .ico30-no,
+.icobag.selected .ico30-no,
+.ico30-no-w {
+	background-position: -90px -130px;
+}
+
+.icobag:hover .ico30-doing,
+.icobag.selected .ico30-doing,
+.ico30-doing-w {
+	background-position: -120px -130px;
+}
+
+.icobag:hover .ico30-finish,
+.icobag.selected .ico30-finish,
+.ico30-finish-w {
+	background-position: -150px -130px;
+}
+
+.icobag:hover .ico30-cancel,
+.icobag.selected .ico30-cancel,
+.ico30-cancel-w {
+	background-position: -180px -130px;
+}
+
+.icobag:hover .ico30-his,
+.icobag.selected .ico30-his,
+.ico30-his-w {
+	background-position: -210px -130px;
+}
+
+.icobag:hover .ico30-lis,
+.icobag.selected .ico30-lis,
+.ico30-lis-w {
+	background-position: -240px -130px;
+}
+
+.icobag:hover .ico30-ris,
+.icobag.selected .ico30-ris,
+.ico30-ris-w {
+	background-position: -270px -130px;
+}
+
+.icobag:hover .ico30-pacs,
+.icobag.selected .ico30-pacs,
+.ico30-pacs-w {
+	background-position: -300px -130px;
+}
+
+.icobag:hover .ico30-video2,
+.icobag.selected .ico30-video2,
+.ico30-video2-w {
+	background-position: -330px -130px;
+}
+
+.icobag:hover .ico30-time,
+.icobag.selected .ico30-time,
+.ico30-time-w {
+	background-position: -360px -130px;
+}
+
+.icobag:hover .ico30-count,
+.icobag.selected .ico30-count,
+.ico30-count-w {
+	background-position: -390px -130px;
+}
+
+.icobag:hover .ico30-voice,
+.icobag.selected .ico30-voice,
+.ico30-voice-w {
+	background-position: -420px -130px;
+}
+
+.icobag:hover .ico30-sms,
+.icobag.selected .ico30-sms,
+.ico30-sms-w {
+	background-position: -450px -130px;
+}
+
+.icobag:hover .ico30-user,
+.icobag.selected .ico30-user,
+.ico30-user-w {
+	background-position: 0 -70px;
+}
+
+.icobag:hover .ico30-lock,
+.icobag.selected .ico30-lock,
+.ico30-lock-w {
+	background-position: -30px -70px;
+}
+
+.icobag:hover .ico30-email,
+.icobag.selected .ico30-email,
+.ico30-email-w {
+	background-position: -60px -70px;
+}
+
+.icobag:hover .ico30-return,
+.icobag.selected .ico30-return,
+.ico30-return-w {
+	background-position: -90px -70px;
+}
+
+.icobag:hover .ico30-menu,
+.icobag.selected .ico30-menu,
+.ico30-menu-w {
+	background-position: -120px -70px;
+}
+
+.icobag:hover .ico30-home,
+.icobag.selected .ico30-home,
+.ico30-home-w {
+	background-position: -150px -70px;
+}
+
+.icobag:hover .ico30-user2,
+.icobag.selected .ico30-user2,
+.ico30-user2-w {
+	background-position: -180px -70px;
+}
+
+.icobag:hover .ico30-patient,
+.icobag.selected .ico30-patient,
+.ico30-patient-w {
+	background-position: -210px -70px;
+}
+
+.icobag:hover .ico30-chart,
+.icobag.selected .ico30-chart,
+.ico30-chart-w {
+	background-position: -240px -70px;
+}
+
+.icobag:hover .ico30-meet,
+.icobag.selected .ico30-meet,
+.ico30-meet-w {
+	background-position: -270px -70px;
+}
+
+.icobag:hover .ico30-cloud,
+.icobag.selected .ico30-cloud,
+.ico30-cloud-w {
+	background-position: -300px -70px;
+}
+
+.icobag:hover .ico30-video,
+.icobag.selected .ico30-video,
+.ico30-video-w {
+	background-position: -330px -70px;
+}
+
+.icobag:hover .ico30-log,
+.icobag.selected .ico30-log,
+.ico30-log-w {
+	background-position: -360px -70px;
+}
+
+.icobag:hover .ico30-rpt1,
+.icobag.selected .ico30-rpt1,
+.ico30-rpt1-w {
+	background-position: -390px -70px;
+}
+
+.icobag:hover .ico30-exit,
+.icobag.selected .ico30-exit,
+.ico30-exit-w {
+	background-position: -420px -70px;
+}
+
+.icobag:hover .ico30-res,
+.icobag.selected .ico30-res,
+.ico30-res-w {
+	background-position: -450px -70px;
+}
+
+.icobag:hover .ico30-set,
+.icobag.selected .ico30-set,
+.ico30-set-w {
+	background-position: -480px -70px;
+}
+
+.icobag:hover .ico30-rpt2,
+.icobag.selected .ico30-rpt2,
+.ico30-rpt2-w {
+	background-position: -510px -70px;
+}
+
+.icobag:hover .ico30-basic3,
+.icobag.selected .ico30-basic3,
+.ico30-basic3-w {
+	background-position: -540px -40px;
+}
+
+.icobag:hover .ico30-cloud3,
+.icobag.selected .ico30-cloud3,
+.ico30-cloud3-w {
+	background-position: -570px -40px;
+}
+
+.icobag:hover .ico30-video3,
+.icobag.selected .ico30-video3,
+.ico30-vieo3-w {
+	background-position: -600px -40px;
+}
+
+.icobag:hover .ico30-rpt3,
+.icobag.selected .ico30-rpt3,
+.ico30-rpt3-w {
+	background-position: -630px -40px;
+}
+
+.icobag:hover .ico30-referral,
+.icobag.selected .ico30-referral,
+.ico30-referral-w {
+	background-position: -660px -70px;
+}
+
+.icobag:hover .ico30-pat-basic,
+.icobag.selected .ico30-pat-basic,
+.icobag.selected2 .ico30-pat-basic,
+.ico30-pat-basic-w {
+	background-position: 0px -190px;
+}
+
+.icobag:hover .ico30-pat-sick,
+.icobag.selected .ico30-pat-sick,
+.icobag.selected2 .ico30-pat-sick,
+.ico30-pat-sick-w {
+	background-position: -30px -190px;
+}
+
+.icobag:hover .ico30-pat-drug,
+.icobag.selected .ico30-pat-drug,
+.icobag.selected2 .ico30-pat-drug,
+.ico30-pat-drug-w {
+	background-position: -60px -190px;
+}
+
+.icobag:hover .ico30-pat-lab,
+.icobag.selected .ico30-pat-lab,
+.icobag.selected2 .ico30-pat-lab,
+.ico30-pat-lab-w {
+	background-position: -90px -190px;
+}
+
+.icobag:hover .ico30-pat-rpt,
+.icobag.selected .ico30-pat-rpt,
+.icobag.selected2 .ico30-pat-rpt,
+.ico30-pat-rpt-w {
+	background-position: -120px -190px;
+}
+
+.icobag:hover .ico30-mp-eboard,
+.icobag.selected .ico30-mp-eboard,
+.ico30-mp-eboard-w {
+	background-position: -150px -190px;
+}
+
+.icobag:hover .ico30-mp-dvideo,
+.icobag.selected .ico30-mp-dvideo,
+.ico30-mp-dvideo-w {
+	background-position: -180px -190px;
+}
+
+.icobag:hover .ico30-mp-info,
+.icobag.selected .ico30-mp-info,
+.ico30-mp-info-w {
+	background-position: -210px -190px;
+}
+
+.icobag:hover .ico30-mp-pat,
+.icobag.selected .ico30-mp-pat,
+.ico30-mp-pat-w {
+	background-position: -240px -190px;
+}
+
+.icobag:hover .ico30-mp-rpt,
+.icobag.selected .ico30-mp-rpt,
+.ico30-mp-rpt-w {
+	background-position: -270px -190px;
+}
+
+
+.icobag:hover .ico30-mp-uvideo,
+.icobag.selected .ico30-mp-uvideo,
+.ico30-mp-uvideo-w {
+	background-position: -300px -190px;
+}
+
+.icobag:hover .ico30-mp-screen,
+.icobag.selected .ico30-mp-screen,
+.ico30-mp-screen-w {
+	background-position: -330px -190px;
+}
+
+.ico40 {
+	width: 40px;
+	height: 40px;
+}
+
+.ico40-user {
+	background-position: 0 -280px;
+}
+
+.ico60 {
+	width: 60px;
+	height: 60px;
+}
+
+.ico60-set {
+	background-position: 0 -360px;
+}
+
+.ico60-log {
+	background-position: -60px -360px;
+}
+
+.ico60-chart {
+	background-position: -120px -360px;
+}
+
+.ico60-meet {
+	background-position: -180px -360px;
+}
+
+.ico60-user {
+	background-position: -240px -360px;
+}
+
+.ico60-patient {
+	background-position: -300px -360px;
+}
+
+.ico60-rpt {
+	background-position: -360px -360px;
+}
+
+.ico60-res {
+	background-position: -420px -360px;
+}
+
+.ico60-referral {
+	background-position: -480px -360px;
+}
+
+.app-icon-new {
+	background-image: url(../images/frame/icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ico22 {
+	width: 22px;
+	height: 22px;
+}
+
+.ico22-alarm-sound-mute {
+	background-image: url(../images/instant/alarmclose.png);
+	background-size: 18px 18px;
+}
+
+.ico22-alarm-sound {
+	background-image: url(../images/instant/alarmopen.png);
+	background-size: 18px 18px;
+}
+
+.ico22-workstate-busy {
+	background-image: url(../images/instant/busy.png);
+	background-size: 18px 18px;
+}
+
+.ico22-workstate-work {
+	background-image: url(../images/instant/work.png);
+	background-size: 18px 18px;
+}
+
+.ico60-doctor {
+	background-image: url(../images/instant/doctor.png)
+}
+
+.ico30-doctor {
+	background-image: url(../images/instant/doctor30.png)
+}
+
+.ico20-call {
+	background-image: url(../images/instant/call.png)
+}
+
+.ico-callno {
+	background-image: url(../images/instant/callno.png);
+	width: 120px !important;
+	height: 40px !important;
+	background-size: 96px 32px;
+}
+
+.ico-callyes {
+	background-image: url(../images/instant/callyes.png);
+	width: 120px !important;
+	height: 40px !important;
+	background-size: 96px 32px;
+}
+
+.ico-instantnotlogin {
+	background-image: url(../images/instant/instantnotlogin.png);
+	width: 80px;
+	height: 30px;
+	background-size: 80px 30px;
+}
+
+.ico-instantmeeting {
+	background-image: url(../images/instant/instantmeeting.png);
+	width: 80px;
+	height: 30px;
+	background-size: 80px 30px;
+}
+
+.ico-instantbusy {
+	background-image: url(../images/instant/instantbusy.png);
+	width: 80px;
+	height: 30px;
+	background-size: 80px 30px;
+}
+
+.ico-instantcancall {
+	background-image: url(../images/instant/instantcancall.png);
+	width: 80px;
+	height: 30px;
+	background-size: 80px 30px;
+}
+
+.ico-instantcannotcall {
+	background-image: url(../images/instant/instantcannotcall.png);
+	width: 80px;
+	height: 30px;
+	background-size: 80px 30px;
+}
+

@@ -1,8 +1,8 @@
 <template>
   <div class="login-bg">
     <div>
-      <img src="../../assets/images/bg-login-head.png" class="login-bg-head" />
-      <img src="../../assets/images/bg-login-foot.png" class="login-bg-foot" />
+      <img src="@/assets/images/bg-login-head.png" class="login-bg-head" />
+      <img src="@/assets/images/bg-login-foot.png" class="login-bg-foot" />
     </div>
     <div class="login-main layui-container">
       <div class="layui-row">
@@ -13,7 +13,7 @@
       <div class="login-container">
         <lay-row style="width: 100%">
           <lay-col md="12" class="login-side">
-            <img src="../../assets/images/bg-login-body.png" class="w-full" />
+            <img src="@/assets/images/bg-login-body.png" class="w-full" />
           </lay-col>
           <lay-col md="12">
             <div class="login-content">
@@ -115,7 +115,7 @@ const router = useRouter();
 const userStore = useUserStore();
 const method = ref("1");
 const remember = ref(false);
-const loginForm = reactive({account:"admin",password:"123456", code: "", uuid: ''});
+const loginForm = reactive({account:"admin",password:"admin123", code: "", uuid: ''});
 const state = reactive({
   codeImg: '',
   uuid: ''
@@ -156,35 +156,10 @@ const loginSubmit = () => {
         setToken(res.token);
         router.push('/');
       }
-      // if (res.status == "0") {
-      //   if (res.logintype == 1) {
-      //     layer.msg("第一次登录需要修改密码");
-      //     // layer.open({
-      //     //     type: 2,
-      //     //     content: '/DigitalORCuIoT/toupdatepssword?username=' + res.user,
-      //     //     title: '修改密码',
-      //     //     area: ['500px', '300px'],
-      //     //     btn: ['确定', '取消'],
-      //     //     yes: function (index, layero) {
-      //     //       // var body = layer.getChildFrame('body', index);
-      //     //       // $(body).find(".layui-layer-inputbtn0").click();
-      //     //     }
-      //     // });
-      //     return false;
-      //   }
-      //   router.push('/');
-      //   return false;
-      // } else if (res.status == "1") {
-      //   layer.msg("用户名或密码错误", { time: 3000 });
-      //   getImg();
-      // } else if (res.status == "2") {
-      //   layer.msg("验证码错误！", { time: 3000 });
-      //   getImg();
-      // } else if (res.status == "3") {
-      //   layer.msg("用户名或手机号异常!",{time: 3000 });
-      //   getImg();
-      // }
-    });
+    })
+    .catch(err=>{
+      getImg();
+    })
 }
 </script>
 <style>

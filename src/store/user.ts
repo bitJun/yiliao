@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { menu, permission } from "../api/module/user";
+import { getRouters } from '@/apis/menu';
 
 export const useUserStore = defineStore({
   id: 'user',
@@ -13,7 +14,7 @@ export const useUserStore = defineStore({
   },
   actions: {
     async loadMenus(){
-      const { data, code } = await menu();
+      const { data, code } = await getRouters();
       if(code == 200) {
         this.menus = data;
       }

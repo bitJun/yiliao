@@ -206,7 +206,7 @@ export default {
         appStore.collapse = true;
       }
       userInfoStore.loadMenus();
-      userInfoStore.loadPermissions();
+      // userInfoStore.loadPermissions();
       state.setTime = setInterval( ()=>{
         setNowTimes();
       },1000)

@@ -1,27 +1,5 @@
 <template>
   <div class="global-tab" v-if="appStore.tab">
-    <lay-dropdown>
-      <lay-icon
-        type="layui-icon-spread-left"
-        style="cursor: pointer;"
-      ></lay-icon>
-      <template #content>
-        <lay-dropdown-menu>
-          <lay-dropdown-menu-item 
-            @click="closeAll"
-          >
-            系统配置
-          </lay-dropdown-menu-item>
-        </lay-dropdown-menu>
-        <lay-dropdown-menu>
-          <lay-dropdown-menu-item 
-            @click="closeOther"
-          >
-            退出
-          </lay-dropdown-menu-item>
-        </lay-dropdown-menu>
-      </template>
-    </lay-dropdown>
     <lay-tab
       :modelValue="currentPath"
       :allowClose="true"

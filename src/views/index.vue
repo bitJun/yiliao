@@ -5,6 +5,10 @@
       <div>
         <a class="map-cell bg-linear" href="javascript:;" lay-text="用户管理">
           <i class="app-icon ico60 ico60-patient"></i>
+          <span>设备配置</span>
+        </a>
+        <a class="map-cell bg-linear" href="javascript:;" lay-text="用户管理">
+          <i class="app-icon ico60 ico60-patient"></i>
           <span>用户管理</span>
         </a>
         <a class="map-cell bg-linear" href="javascript:;" lay-text="清洁系统">

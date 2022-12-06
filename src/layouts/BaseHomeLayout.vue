@@ -18,18 +18,22 @@
       ></div>
       <lay-layout style="width: 0px">
         <!-- 布局头部 -->
-        <lay-header style="display: flex">
+        <lay-header style="display: flex;height: 70px;">
           <lay-menu class="layui-layout-left">
-            <lay-menu-item @click="collapse">
-              <lay-icon
+            <lay-menu-item @click="collapse" style="display: flex;align-items: center;height: 70px;">
+              <!-- <lay-icon
                 v-if="appStore.collapse"
                 type="layui-icon-spread-left"
               ></lay-icon>
-              <lay-icon v-else type="layui-icon-shrink-right"></lay-icon>
+              <lay-icon v-else type="layui-icon-shrink-right"></lay-icon> -->
+              <img
+                src="@/assets/images/logo1.png"
+                style="height: 40px;margin: 0 30px 0 30px;"
+              />
             </lay-menu-item>
-            <lay-menu-item class="hidden-xs-only" @click="refresh">
+            <!-- <lay-menu-item class="hidden-xs-only" @click="refresh">
               <lay-icon type="layui-icon-refresh-one"></lay-icon>
-            </lay-menu-item>
+            </lay-menu-item> -->
             <lay-menu-item
               class="hidden-xs-only"
               v-if="appStore.breadcrumb"
@@ -99,14 +103,14 @@
                 <template #content>
                   <lay-dropdown-menu>
                     <lay-dropdown-menu-item>
-                      <template #default>用户信息</template>
+                      <template #default>个人中心</template>
                     </lay-dropdown-menu-item>
                     <lay-dropdown-menu-item>
-                      <template #default>系统设置</template>
+                      <template #default>修改密码</template>
                     </lay-dropdown-menu-item>
                     <lay-line></lay-line>
                     <lay-dropdown-menu-item @click="logOut">
-                      <template #default>注销登录</template>
+                      <template #default>退出</template>
                     </lay-dropdown-menu-item>
                   </lay-dropdown-menu>
                 </template>
@@ -140,6 +144,19 @@
           <!-- 内容区域 -->
           <global-content></global-content>
           <!-- 多选项卡 -->
+          <!-- <div class="display:flex">
+            <div>
+              <lay-dropdown placement="right-start" updateAtScroll>
+                <lay-button type="primary">right-start</lay-button>
+                <template #content>
+                  <div style="width:300px;height:200px;"></div> 
+                </template>
+              </lay-dropdown>
+            </div>
+            <div style="flex: 1">
+              <global-tab></global-tab>
+            </div>
+          </div> -->
           <global-tab></global-tab>
         </lay-body>
         <lay-footer></lay-footer>
@@ -205,7 +222,7 @@ export default {
       if (document.body.clientWidth < 768) {
         appStore.collapse = true;
       }
-      userInfoStore.loadMenus();
+      // userInfoStore.loadMenus();
       // userInfoStore.loadPermissions();
       state.setTime = setInterval( ()=>{
         setNowTimes();

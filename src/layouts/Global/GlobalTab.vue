@@ -6,13 +6,13 @@
         style="cursor: pointer;"
       ></lay-icon>
       <template #content>
-        <lay-dropdown-menu>
+        <!-- <lay-dropdown-menu>
           <lay-dropdown-menu-item 
             @click="closeAll"
           >
             系统配置
           </lay-dropdown-menu-item>
-        </lay-dropdown-menu>
+        </lay-dropdown-menu> -->
         <lay-dropdown-menu>
           <lay-dropdown-menu-item 
             @click="closeOther"

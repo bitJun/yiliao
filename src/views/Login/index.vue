@@ -26,7 +26,11 @@
                         v-model="loginForm.account"
                         type="text"
                         aria-placeholder="请输入用户名"
-                      ></lay-input>
+                      >
+                        <template #prefix>
+                          <i class="iconfont ico30 ico30-user"></i>
+                        </template>
+                      </lay-input>
                     </div>  
                     <div style="margin-bottom: 10px;">
                       <lay-input
@@ -123,22 +127,6 @@ const state = reactive({
 onMounted(()=>{
   getImg();
 })
-// const loginSubmit = async () => {
-//   router.push('/');
-//   let params = {...loginForm};
-//   params["password"] = md5(params["password"]);
-//   let { data, code, msg } = await login(loginForm);
-//   if (code == 200) {
-//     layer.msg(msg, { icon: 1 }, async () => {
-//       userStore.token = data.token;
-//       await userStore.loadMenus();
-//       await userStore.loadPermissions();
-//       router.push('/');
-//     })
-//   } else {
-//     layer.msg(msg, { icon: 2 })
-//   }
-// }
 const getImg = () => {
   getCodeImg()
     .then(res=>{

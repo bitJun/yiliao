@@ -3,7 +3,7 @@
 </template>
 <style>
 @import "./styles/index.css";
-
+@import "./styles/iconfont.css";
 #app {
   height: 100%;
 }
